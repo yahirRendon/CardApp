@@ -1,0 +1,11 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Card App</string>
+
+
+    <string name="greeting_en">Happy day of the Dead,\u0020<xliff:g id="name" example="Mary">%1$s</xliff:g>!</string>
+    <string name="from_en">From\u0020<xliff:g id="name" example="Mary">%1$s</xliff:g></string>
+
+    <string name="greeting_es">¡Feliz Día De Los Muertos,\u0020<xliff:g id="name" example="Mary">%1$s</xliff:g>!</string>
+    <string name="from_es">De\u0020<xliff:g id="name" example="Mary">%1$s</xliff:g></string>
+    <string name="app_title">Create a Card</string>
+</resources>
