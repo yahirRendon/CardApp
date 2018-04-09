@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
     TextView greetingText; //Greeting TextView
@@ -35,6 +36,8 @@ public class Main2Activity extends AppCompatActivity {
         fromName = getIntent().getStringExtra("fromNamePush");
         greetingText.setText(getString(R.string.greeting_en, toName));
         fromText.setText(getString(R.string.from_en, fromName));
+        Toast.makeText(getBaseContext(), "Tap text to translate",
+                Toast.LENGTH_LONG).show();
     }
 
     //Translate the greeting and from text if greeting or from TextView is clicked
