@@ -6,6 +6,42 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+        <item name="android:textColorTertiary">@color/colorWhite</item>
+        <item name="android:textColorPrimaryInverse">@color/colorWhite</item>
+        <item name="android:textColorSecondaryInverse">@color/colorWhite</item>
+        <item name="android:textColorTertiaryInverse">@color/colorWhite</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+
     </style>
+
+    <style name="TextViewMain">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextViewTitle">
+        <item name="android:textSize">@dimen/xlarge_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewLarge">
+        <item name="android:textSize">@dimen/large_text</item>
+    </style>
+
+    <style name="EditTextMain">
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="ButtonMain">
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
 
 </resources>

@@ -8,4 +8,7 @@
     <string name="greeting_es">¡Feliz Día De Los Muertos,\u0020<xliff:g id="name" example="Mary">%1$s</xliff:g>!</string>
     <string name="from_es">De\u0020<xliff:g id="name" example="Mary">%1$s</xliff:g></string>
     <string name="app_title">Create a Card</string>
+    <string name="to_hint_text">To</string>
+    <string name="from_hint_text">From</string>
+    <string name="create_button_text">Create</string>
 </resources>

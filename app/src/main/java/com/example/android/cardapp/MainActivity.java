@@ -10,11 +10,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button submitNamesButton;
-    EditText toNameText;
-    EditText fromNameText;
-    String toName;
-    String fromName;
+    Button submitNamesButton; //Submit names button
+    EditText toNameText; //To name EditText
+    EditText fromNameText; //From name EditText
+    String toName; //String from to EditText
+    String fromName; //String from, from EditText
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -41,10 +42,18 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         } else {
             Intent toActivity2 = new Intent(getApplicationContext(), Main2Activity.class);
-            toActivity2.putExtra("toNamePush", toName);
-            toActivity2.putExtra("fromNamePush", fromName);
+            toActivity2.putExtra(MyConstants.myFirstKey, toName);
+            toActivity2.putExtra(MyConstants.mySecondKey, fromName);
             startActivity(toActivity2);
         }
     }
+
+    //Manage global constants
+    public class MyConstants {
+        public static final String myFirstKey = "toNamePush";
+        public static final String mySecondKey = "FromNamePush";
+    }
 }
+
+
 

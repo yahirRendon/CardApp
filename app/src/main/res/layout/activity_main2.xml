@@ -10,20 +10,18 @@
         android:id="@+id/felizImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:onClick="sendToResource"
         android:scaleType="centerCrop"
-        android:src="@drawable/diadelos"
-        android:onClick="sendToResource"/>
+        android:src="@drawable/diadelos" />
 
     <TextView
         android:id="@+id/toText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/medium"
-        android:fontFamily="sans-serif-light"
+        android:onClick="translateText"
         android:text="@string/greeting_en"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/xlarge_text"
-        android:onClick="translateText"/>
+        android:textSize="@dimen/xlarge_text" />
 
     <TextView
         android:id="@+id/fromText"
@@ -32,11 +30,9 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/medium"
-        android:fontFamily="sans-serif-light"
+        android:onClick="translateText"
         android:text="@string/from_en"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/xlarge_text"
-        android:onClick="translateText"/>
+        android:textSize="@dimen/xlarge_text" />
 
 </RelativeLayout>
 

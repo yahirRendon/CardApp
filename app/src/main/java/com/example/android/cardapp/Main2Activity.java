@@ -32,8 +32,8 @@ public class Main2Activity extends AppCompatActivity {
         greetingText=(TextView)findViewById(R.id.toText);
         fromText=(TextView)findViewById(R.id.fromText);
         img=(ImageView)findViewById(R.id.felizImage);
-        toName = getIntent().getStringExtra("toNamePush");
-        fromName = getIntent().getStringExtra("fromNamePush");
+        toName = getIntent().getStringExtra(MainActivity.MyConstants.myFirstKey);
+        fromName = getIntent().getStringExtra(MainActivity.MyConstants.mySecondKey);
         greetingText.setText(getString(R.string.greeting_en, toName));
         fromText.setText(getString(R.string.from_en, fromName));
         Toast.makeText(getBaseContext(), "Tap text to translate",
